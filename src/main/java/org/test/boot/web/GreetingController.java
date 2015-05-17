@@ -1,15 +1,11 @@
 package org.test.boot.web;
 
-import java.util.Date;
-import java.util.Map;
-import java.util.concurrent.atomic.AtomicLong;
-
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-import org.test.boot.domain.Greeting;
+
+import java.util.Date;
+import java.util.Map;
 
 
 
@@ -26,9 +22,5 @@ public class GreetingController {
 		return "welcome";
 	}
 
-	@RequestMapping("/foo")
-	public String foo(Map<String, Object> model) {
-		throw new RuntimeException("Foo");
-	}
 
 }
