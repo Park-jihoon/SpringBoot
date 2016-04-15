@@ -19,7 +19,6 @@ import javax.annotation.PreDestroy;
 @Configuration
 @EnableAutoConfiguration(exclude = DataSourceAutoConfiguration.class)
 @EnableConfigurationProperties(TomcatPoolDataSourceProperties.class)
-@MapperScan(basePackages="org.test.boot.mappers")
 public class DatabaseConfig {
     @Autowired
     private TomcatPoolDataSourceProperties tomcatPoolDataSourceProperties;

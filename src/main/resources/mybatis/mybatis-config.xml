@@ -13,7 +13,7 @@
 	</typeAliases>
 	
 	<mappers>
-		<mapper resource="mybatis/mappers/user.xml"/>
+		<mapper resource="mybatis/mappers/memberMapper.xml"/>
 	</mappers>
 	
  

@@ -2,7 +2,6 @@ package org.test.boot.common;
 
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.core.io.Resource;
 
 @ConfigurationProperties(prefix = "mybatis", ignoreUnknownFields = false)
 public class TomcatPoolDataSourceProperties {

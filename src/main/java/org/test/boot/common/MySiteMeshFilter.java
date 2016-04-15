@@ -8,10 +8,13 @@ public class MySiteMeshFilter extends ConfigurableSiteMeshFilter {
 	@Override
 	protected void applyCustomConfiguration(SiteMeshFilterBuilder builder) {
         //Configuring Decorator Mappings
-		builder.addDecoratorPath("/*", "/WEB-INF/sitemesh/decorator.jsp");
+        builder
+                .addExcludedPath("login")
+                .addExcludedPath("/common/*")
+                .addDecoratorPath("/*", "/WEB-INF/sitemesh/decorator.jsp")
+                        //MIME Types
+                .setMimeTypes("text/html", "application/xhtml+xml", "application/vnd.wap.xhtml+xml");
 
-        //MIME Types
-        builder.setMimeTypes("text/html", "application/xhtml+xml", "application/vnd.wap.xhtml+xml");
 	}
 
 }
